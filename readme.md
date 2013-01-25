@@ -1,4 +1,6 @@
-**urm** is an implementation of a register machine based on the *Universal Register Machine* described by Cutland. It has 10 registers (marked R1 through R10) and supports four commands.
+**[urm](http://alex.nisnevich.com/experiments/urm/)** is an implementation of a register machine based on the **Unlimited Register Machine** described by N.J. Cutland in _Computability: An introduction to recursive function theory_. 
+
+urm has 10 registers (marked R1 through R10) and supports four commands.
 
 ### Commands
 
@@ -9,7 +11,7 @@
 
 ### Example
 
-The following program returns `max(n-1,0)` in R1, given input n in R1.
+The following program returns `max(n-1,0)` in R1, given input `n` in R1.
 
 ```
 1. Z(2)
