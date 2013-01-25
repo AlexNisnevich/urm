@@ -1,0 +1,78 @@
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="urm.js"></script>
+	<style type="text/css">
+		#pointer {
+			visibility: hidden;
+			float: left;
+			position: relative;
+			top: 2px;
+		}
+
+		#program {
+			float: left;
+			width: 400px;
+			height: 400px;
+		}
+
+		#registers {
+			float: left;
+			margin: 0 1em;
+		}
+
+		#registers input {
+			width: 50px;
+		}
+	</style>
+</head>
+<body>
+	<img id="pointer" src="images/triangle-right.png"></div>
+	<textarea id="program"></textarea>
+	<table id="registers">
+		<tr>
+			<td>R1</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R2</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R3</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R4</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R5</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R6</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R7</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R8</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R9</td>
+			<td><input type="number" value="0"></input></td>
+		</tr>
+		<tr>
+			<td>R10</td>
+			<td> <input type="number" value="0"></input></td>
+		</tr>
+	</table>
+	<button id="load" onclick="load();">Load</button>
+	<button id="step" onclick="step();">Step</button>
+	<button id="run" onclick="run();">Run</button>
+</body>
+</html>
